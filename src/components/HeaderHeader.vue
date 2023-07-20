@@ -7,11 +7,12 @@
           <span class="popup__span">____</span>
           <span class="popup__span">___</span>
         </div>
-        <img src="../assets/icon/insta.png" alt="" />
-        <img src="../assets/icon/vk.png" alt="" />
-        <img src="../assets/icon/facebook.png" alt="" />
+        <div class="social__icons">
+          <img src="../assets/icon/insta.png" alt="" />
+          <img src="../assets/icon/vk.png" alt="" />
+          <img src="../assets/icon/facebook.png" alt="" />
+        </div>
       </div>
-
       <div class="logo">
         <h1 class="logo__h1">ELEAN</h1>
         <p class="logo__p">женский смокинг</p>
@@ -20,8 +21,11 @@
       <div class="contacts">
         <p class="contacts__tel">+7 (495) 150 - 14 - 77</p>
         <div class="contacts__icon">
-          <img src="../assets/icon/favourite.png" alt="" />
-          <img src="../assets/icon/basket.png" alt="" />
+          <RouterLink to="/favourite">
+            <img src="../assets/icon/favourite.png" alt="" /> </RouterLink
+          ><RouterLink to="/cart">
+            <img src="../assets/icon/basket.png" alt="" />
+          </RouterLink>
         </div>
       </div>
     </div>
@@ -43,16 +47,15 @@ export default {
 };
 </script>
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+<style scoped>
+.header {
+  width: 70%;
+  margin: auto;
 }
 .top {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .popup {
   display: flex;
@@ -62,35 +65,43 @@ export default {
   margin-top: -10px;
 }
 .social {
-  width: 180px;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social__icons {
+  width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .logo {
   display: flex;
+  width: 25%;
   align-items: center;
-
 }
 .logo__h1 {
-  font-weight: 300;
+  font-family: Lato;
+  font-weight: 500;
 }
 .logo__p {
   width: 100px;
   font-size: 13px;
   color: gray;
+  font-family: Lato;
   letter-spacing: 2px;
   text-align: center;
 }
 .contacts {
   display: flex;
-  width: 300px;
+  width: 25%;
   justify-content: space-between;
   align-items: center;
 }
 .contacts__tel {
-  letter-spacing: 1px;
-  font-size: 17px;
+  font-size: 14px;
+  font-family: Lato;
 }
 .contacts__icon {
   width: 100px;
@@ -102,5 +113,9 @@ export default {
   margin: 30px auto;
   display: flex;
   justify-content: space-between;
+}
+.menu__p {
+  font-family: Futura Md BT;
+  font-size: 14px;
 }
 </style>

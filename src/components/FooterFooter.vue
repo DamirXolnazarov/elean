@@ -9,7 +9,7 @@
       <p class="email">EMAIL: info@eleanboutique.ru</p>
     </div>
 
-    <div class="footer__block">
+    <div class="footer__block_2">
       <div class="block__menu">
         <RouterLink to="">Доставка</RouterLink>
         <RouterLink to="">Оплата</RouterLink>
@@ -29,20 +29,20 @@
         </div>
       </div>
       <div class="block__icon">
-        <img src="../icon/insta.png" alt="" />
+        <img src="../assets/icon/insta.png" alt="" />
         <img src="../assets/icon/vk.png" alt="" />
         <img src="../assets/icon/facebook.png" alt="" />
       </div>
     </div>
 
     <div class="footer__block">
-      <input type="text" placeholder="ИМЯ" />
-      <br>
-      <input type="e-mail" placeholder="E-MAIL" />
+      <input class="input" type="text" placeholder="ИМЯ" />
+      <br />
+      <input class="input" type="e-mail" placeholder="E-MAIL" />
       <div class="agree">
         <input class="box" type="checkbox" />
         <span class="agree__span">Я согласен</span>
-        <p class="agree__p">с политикой конфиденциальности</p>
+        <span class="agree__p">с политикой конфиденциальности</span>
       </div>
       <div class="button">
         <button class="btn">
@@ -65,107 +65,111 @@ export default {
   padding: 0;
   box-sizing: border-box;
 }
-@font-face {
-  font-family: el;
-  src: url(../assets/fonts/JosefinSans-VariableFont_wght.ttf);
-}
+
 .footer {
+  margin: auto;
   margin-top: 50px;
-  width: 100%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
 }
 .logo {
   font-weight: 200;
   font-size: 25px;
-  font-family: el;
+  font-family: Lato;
+  margin-bottom: 20px;
 }
-.tel {
-  font-size: 12px;
-  font-family: arial;
-  padding-top: 40px;
-  letter-spacing: 1px;
-  font-weight: 300;
+.footer__block {
+  width: 25%;
+}
+.footer__block_2 {
+  width: 40%;
+}
+.tel__p {
+  font-family: FuturaMediumC;
+  font-size: 15px;
 }
 .email {
-  letter-spacing: 1px;
-  font-size: 12px;
-  font-family: arial;
+  font-family: FuturaMediumC;
+  font-size: 15px;
   padding-top: 40px;
-  font-weight: 300;
 }
 .block__menu {
   color: black;
-  width: 650px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 .block__menu a {
-  letter-spacing: 1px;
   font-size: 14px;
-  font-family: arial;
+  font-family: FuturaMediumC;
   color: black;
   text-decoration: none;
 }
 .block__contacts {
   margin-top: 40px;
   display: flex;
-  width: 650px;
+  width: 100%;
   justify-content: space-between;
 }
+
+.adress,
+.time {
+  width: 40%;
+}
 .adress__h3 {
-  font-size: 17px;
-  font-family: arial;
-  font-weight: 200;
+  font-family: FuturaMediumC;
+  font-size: 15px;
 }
 .adress__p {
   padding-top: 5px;
-  font-family: arial;
-  font-weight: 200;
-  font-size: 13px;
+  font-family: FuturaMediumC;
+  font-size: 15px;
 }
 .time__p {
   padding-top: 5px;
-  font-family: arial;
-  font-weight: 200;
-  font-size: 13px;
+  font-family: FuturaMediumC;
+  font-size: 15px;
 }
 .time__h3 {
-  font-size: 17px;
-  font-family: arial;
-  font-weight: 200;
+  font-family: FuturaMediumC;
+  font-size: 15px;
 }
-.block__icon{
+.block__icon {
   padding-top: 40px;
   width: 100px;
   display: flex;
   justify-content: space-between;
-  align-items:center ;
+  align-items: center;
 }
-input{
+input {
   padding: 10px 60px;
   margin-bottom: 20px;
   color: black;
-  border: 1px solid #D7B494;
+  border: 1px solid #d7b494;
 }
-.agree{
-  display: flex;
+.input{
+  width: 100%;
 }
-.agree__span{
+
+.agree__span {
   margin-right: 4px;
-  font-size: 12px;
-  color: #D7B494 ;
+
+  color: #d7b494;
+  font-family: FuturaMediumC;
+  font-size: 13px;
 }
-.agree__p{
-  font-size: 12px;
+.agree__p {
+  font-family: FuturaMediumC;
+  font-size: 13px;
 }
-.box{
+.box {
   margin-right: 10px;
 }
-.btn{
-  width: 285px;
+.btn {
+  width: 100%;
   height: 35px;
-  border: 1px solid #D7B494;
-background: transparent;
+  border: 1px solid #d7b494;
+  background: transparent;
 }
 </style>
