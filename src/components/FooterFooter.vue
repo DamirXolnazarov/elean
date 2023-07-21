@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <div class="footer__block">
-      <h1 class="logo">ELEAN</h1>
+      <RouterLink to="/"> <h1 class="logo">ELEAN</h1></RouterLink> 
       <div class="tel">
         <p class="tel__p">ТЕЛ.: 8 (495) 150-14-77</p>
         <p class="tel__p">WHATSAPP: +7 (977) 728-27-38</p>

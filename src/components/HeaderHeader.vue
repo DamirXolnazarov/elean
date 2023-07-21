@@ -14,10 +14,9 @@
         </div>
       </div>
       <div class="logo">
-        <h1 class="logo__h1">ELEAN</h1>
-        <p class="logo__p">женский смокинг</p>
+        <RouterLink to="/"><h1 class="logo__h1">ELEAN</h1></RouterLink>
+        <RouterLink to="/"> <p class="logo__p">женский смокинг</p></RouterLink>
       </div>
-
       <div class="contacts">
         <p class="contacts__tel">+7 (495) 150 - 14 - 77</p>
         <div class="contacts__icon">
@@ -58,10 +57,10 @@ export default {
   display: flex;
   justify-content: space-between;
 }
-a{
+a {
   text-decoration: none;
 }
-a p{
+a p {
   color: black;
 }
 .popup {

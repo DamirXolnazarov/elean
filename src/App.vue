@@ -36,4 +36,8 @@ import FixedMsg from "./components/FixedMsg.vue";
   font-family: FuturaBookC;
   src: url('./assets/fonts/futurabookc.ttf');
 }
+@font-face {
+  font-family: Lato;
+  src: url('./assets/fonts/Lato-Regular.ttf');
+}
 </style>

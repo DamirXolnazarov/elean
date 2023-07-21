@@ -176,9 +176,15 @@ input {
   display: flex;
   flex-direction: row !important;
 }
+.four,
+.five,
+.send,
+.star,
 .instagram h2 {
   width: 100%;
   text-align: center;
+  font-family: FuturaBookC;
+  font-size: 21px;
 }
 
 .stars {
@@ -265,6 +271,12 @@ button {
 .wrapper .block img {
   object-fit: contain;
   width: 100%;
+}
+.wrapper .block p,
+.wrapper2 .block p,
+.third .bottom p {
+  font-family: Lato;
+  font-size: 18px;
 }
 
 .wrapper .block:nth-child(1) {
