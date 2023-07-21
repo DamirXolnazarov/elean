@@ -3,7 +3,9 @@
     <p class="title">ИЗБРАННОЕ</p>
     <hr class="line" />
     <div class="goods">
+
       <div
+      v-for="item of this.favourites" :key="item.id"
         class="goods__item"
       >
         <div class="goods__item__main">
@@ -14,7 +16,7 @@
           />
           <div class="goods__item__main__textblock">
             <p class="goods__item__main__name">
-              Классический комплект с смокингом и жилетом
+              {{ item.title }}
             </p>
             <p class="goods__item__main__name">63 500 ₽</p>
           </div>
@@ -28,6 +30,7 @@
           </button>
         </div>
       </div>
+
     </div>
     <hr class="line" />
     <div class="email">
@@ -41,9 +44,12 @@
   </div>
 </template>
 <script>
+import store from '../store';
 export default {
   data() {
-    return {};
+    return {
+      favourites: store.state.favouties
+    };
   },
 };
 
