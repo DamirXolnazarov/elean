@@ -34,7 +34,7 @@
       <p class="menu__p">КАТЕГОРИИ</p>
       <p class="menu__p">НАШИ КОЛЛЕКЦИИ</p>
       <p class="menu__p">ПОКУПАТЕЛЯМ</p>
-      <p class="menu__p">О БРЕНДЕ</p>
+      <RouterLink to="/about"><p class="menu__p">О БРЕНДЕ</p></RouterLink>
       <p class="menu__p">ШОУРУМ</p>
       <p class="menu__p">КОНТАКТЫ</p>
     </div>
@@ -51,11 +51,18 @@ export default {
 .header {
   width: 70%;
   margin: auto;
+  margin-top: 12px;
 }
 .top {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+a{
+  text-decoration: none;
+}
+a p{
+  color: black;
 }
 .popup {
   display: flex;

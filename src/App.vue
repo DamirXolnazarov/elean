@@ -2,12 +2,15 @@
 import { RouterLink, RouterView } from "vue-router";
 import HeaderHeader from "./components/HeaderHeader.vue";
 import FooterFooter from "./components/FooterFooter.vue";
+import FixedMsg from "./components/FixedMsg.vue";
 </script>
 
 <template>
   <HeaderHeader />
   <RouterView />
+  <FixedMsg></FixedMsg>
   <FooterFooter />
+
 </template>
 
 <style>
