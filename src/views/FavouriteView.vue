@@ -5,9 +5,6 @@
     <div class="goods">
       <div
         class="goods__item"
-        v-for="item of favourites"
-        :key="item.id"
-        id="item.idx"
       >
         <div class="goods__item__main">
           <img
