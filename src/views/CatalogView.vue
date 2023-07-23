@@ -26,7 +26,7 @@
         
         <div class="favourite">
           <p class="block__name">{{ i.title }}</p>
-          <div @click="addFav(item)" class="div">
+          <div @click="addFav(i)" class="div">
             <img src="../assets/icon/favourite.png" alt="" />
           </div>
         </div>
@@ -70,10 +70,17 @@ export default {
 }
 .left__h2 {
   font-weight: 100;
+  font-family: FuturaMediumC;
 }
 
 .left__p {
+  font-family: FuturaMediumC;
   padding-top: 15px;
+  transition-duration: .2s;
+}
+.left__p:hover{
+color: #AE9177;
+text-decoration: underline;
 }
 .right {
   width: 80%;
@@ -82,15 +89,18 @@ export default {
   flex-wrap: wrap;
 }
 .block {
+  margin-top: 30px;
   width: 300px;
 }
 .favourite {
+  margin-top: 10px;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   display: flex;
 }
 .block__name {
+  font-family: FuturaMediumC;
   font-size: 17px;
   width: 200px;
 }
@@ -104,17 +114,21 @@ export default {
 .block__price {
   font-size: 20px;
   width: 400;
+  font-family: FuturaMediumC;
 }
 .block__span {
   width: 150px;
   font-size: 15px;
   color: gray;
+  font-family: Lato;
 }
 .image{
   width: 100%;
   height: 400px;
 }
 .block__img{
-  object-fit: fill;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 </style>
