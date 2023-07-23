@@ -11,7 +11,7 @@ export default createStore({
         category: 1,
         count: 9,
         mainImg:
-          "./assets/165 5.png",
+          "/src/assets/165_5.png",
         addInfo: "Подчеркнет линию талии",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -21,8 +21,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/165 5.png",
-              "./assets/165 5.png",
+              "/src/assets/165_5.png",
+              "/src/assets/165_5.png",
             ],
           },
         ],
@@ -37,7 +37,7 @@ export default createStore({
         category: 1,
         count: 9,
         mainImg:
-          "./assets/7142569 3.png",
+          "/src/assets/7142569_3.png",
         addInfo: "Мировая классика",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -47,8 +47,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/7142569 3.png",
-              "./assets/7142569 3.png",
+              "/src/assets/7142569_3.png",
+              "/src/assets/7142569_3.png",
             ],
           },
         ],
@@ -65,7 +65,7 @@ export default createStore({
         category: 2,
         count: 9,
         mainImg:
-          "./assets/Elean-121 2.png",
+          "/src/assets/Elean-121_2.png",
         addInfo: "Черная классическая юбка, подчеркивает талию",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -75,8 +75,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/Elean-121 2.png",
-              "./assets/Elean-121 2.png",
+              "/src/assets/Elean-121_2.png",
+              "/src/assets/Elean-121_2.png",
             ],
           },
         ],
@@ -91,7 +91,7 @@ export default createStore({
         category: 2,
         count: 9,
         mainImg:
-          "./assets/Elean-7751456 2.png",
+          "/src/assets/Elean-7751456 2.png",
         addInfo: "Красная пышная юбка",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -101,8 +101,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/Elean-7751456 2.png",
-              "./assets/Elean-7751456 2.png",
+              "/src/assets/Elean-7751456 2.png",
+              "/src/assets/Elean-7751456 2.png",
             ],
           },
         ],
@@ -117,7 +117,7 @@ export default createStore({
         category: 2,
         count: 9,
         mainImg:
-          "./assets/Elean25-sajt2 1.png",
+          "/src/assets/Elean25-sajt2 1.png",
         addInfo: "Синее облигающее платье ",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -127,8 +127,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/Elean25-sajt2 1.png",
-              "./assets/Elean25-sajt2 1.png",
+              "/src/assets/Elean25-sajt2 1.png",
+              "/src/assets/Elean25-sajt2 1.png",
             ],
           },
         ],
@@ -143,7 +143,7 @@ export default createStore({
         category: 2,
         count: 9,
         mainImg:
-          "./assets/Elean251254 2.png",
+          "/src/assets/Elean251254 2.png",
         addInfo: "Синее вечернее платье ",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -153,8 +153,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/Elean251254 2.png",
-              "./assets/Elean251254 2.png",
+              "/src/assets/Elean251254 2.png",
+              "/src/assets/Elean251254 2.png",
             ],
           },
         ],
@@ -169,7 +169,7 @@ export default createStore({
         category: 4,
         count: 9,
         mainImg:
-          "./assets/Elean25456 6.png",
+          "/src/assets/Elean25456 6.png",
         addInfo: "Бежевые широкие брюки",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -179,8 +179,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/Elean25456 6.png",
-              "./assets/Elean25456 6.png",
+              "/src/assets/Elean25456 6.png",
+              "/src/assets/Elean25456 6.png",
             ],
           },
         ],
@@ -195,7 +195,7 @@ export default createStore({
         category: 4,
         count: 9,
         mainImg:
-          "./assets/Elean257890 1.png",
+          "/src/assets/Elean257890 1.png",
         addInfo: "Бежевые классические брюки ",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -205,8 +205,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/Elean257890 1.png",
-              "./assets/Elean257890 1.png",
+              "/src/assets/Elean257890 1.png",
+              "/src/assets/Elean257890 1.png",
             ],
           },
         ],
@@ -220,7 +220,7 @@ export default createStore({
         category: 4,
         count: 9,
         mainImg:
-          "./assets/Elean25sajt5 — копия 2.png",
+          "/src/assets/Elean25sajt5 — копия 2.png",
         addInfo: "Бежевые классические брюки ",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -230,8 +230,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/Elean25sajt5 — копия 2.png",
-              "./assets/Elean25sajt5 — копия 2.png",
+              "/src/assets/Elean25sajt5 — копия 2.png",
+              "/src/assets/Elean25sajt5 — копия 2.png",
             ],
           },
         ],
@@ -245,7 +245,7 @@ export default createStore({
         category: 4,
         count: 9,
         mainImg:
-          "./assets/Elean2723322_fs 6.png",
+          "/src/assets/Elean2723322_fs 6.png",
         addInfo: "Бежевые классические брюки ",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -255,8 +255,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/Elean2723322_fs 6.png",
-              "./assets/Elean2723322_fs 6.png",
+              "/src/assets/Elean2723322_fs 6.png",
+              "/src/assets/Elean2723322_fs 6.png",
             ],
           },
         ],
@@ -270,7 +270,7 @@ export default createStore({
         category: 4,
         count: 9,
         mainImg:
-          "./assets/EleanBoutique20983 2.png",
+          "/src/assets/EleanBoutique20983 2.png",
         addInfo: "Бежевые классические брюки ",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -280,8 +280,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/EleanBoutique20983 2.png",
-              "./assets/EleanBoutique20983 2.png",
+              "/src/assets/EleanBoutique20983 2.png",
+              "/src/assets/EleanBoutique20983 2.png",
             ],
           },
         ],
@@ -295,7 +295,7 @@ export default createStore({
         category: 4,
         count: 9,
         mainImg:
-          "./assets/elean1_58592 1.png",
+          "/src/assets/elean1_58592 1.png",
         addInfo: "Бежевые классические брюки ",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -305,8 +305,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/elean1_58592 1.png",
-              "./assets/elean1_58592 1.png",
+              "/src/assets/elean1_58592 1.png",
+              "/src/assets/elean1_58592 1.png",
             ],
           },
         ],
@@ -320,7 +320,7 @@ export default createStore({
         category: 4,
         count: 9,
         mainImg:
-          "./assets/elean1_58827 2.png",
+          "/src/assets/elean1_58827 2.png",
         addInfo: "Бежевые классические брюки ",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -330,8 +330,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/elean1_58827 2.png",
-              "./assets/elean1_58827 2.png",
+              "/src/assets/elean1_58827 2.png",
+              "/src/assets/elean1_58827 2.png",
             ],
           },
         ],
@@ -345,7 +345,7 @@ export default createStore({
         category: 4,
         count: 9,
         mainImg:
-          "./assets/elean1_58886 2.png",
+          "/src/assets/elean1_58886 2.png",
         addInfo: "Бежевые классические брюки ",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -355,8 +355,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/elean1_58886 2.png",
-              "./assets/elean1_58886 2.png",
+              "/src/assets/elean1_58886 2.png",
+              "/src/assets/elean1_58886 2.png",
             ],
           },
         ],
@@ -370,7 +370,7 @@ export default createStore({
         category: 4,
         count: 9,
         mainImg:
-          "./assets/elean47277-1 5.png",
+          "/src/assets/elean47277-1 5.png",
         addInfo: "Бежевые классические брюки ",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -380,8 +380,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/elean47277-1 5.png",
-              "./assets/elean47277-1 5.png",
+              "/src/assets/elean47277-1 5.png",
+              "/src/assets/elean47277-1 5.png",
             ],
           },
         ],
@@ -395,7 +395,7 @@ export default createStore({
         category: 4,
         count: 9,
         mainImg:
-          "./assets/elean47408 3.png",
+          "/src/assets/elean47408 3.png",
         addInfo: "Бежевые классические брюки ",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -405,8 +405,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/elean47408 3.png",
-              "./assets/elean47408 3.png",
+              "/src/assets/elean47408 3.png",
+              "/src/assets/elean47408 3.png",
             ],
           },
         ],
@@ -420,7 +420,7 @@ export default createStore({
         category: 4,
         count: 9,
         mainImg:
-          "./assets/elean47517-1 1.png",
+          "/src/assets/elean47517-1 1.png",
         addInfo: "Бежевые классические брюки ",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -430,8 +430,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/elean47517-1 1.png",
-              "./assets/elean47517-1 1.png",
+              "/src/assets/elean47517-1 1.png",
+              "/src/assets/elean47517-1 1.png",
             ],
           },
         ],
@@ -445,7 +445,7 @@ export default createStore({
         category: 4,
         count: 9,
         mainImg:
-          "./assets/elean47796 1.png",
+          "/src/assets/elean47796 1.png",
         addInfo: "Бежевые классические брюки ",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -455,8 +455,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/elean47796 1.png",
-              "./assets/elean47796 1.png",
+              "/src/assets/elean47796 1.png",
+              "/src/assets/elean47796 1.png",
             ],
           },
         ],
@@ -470,7 +470,7 @@ export default createStore({
         category: 4,
         count: 9,
         mainImg:
-          "./assets/elean563015 2.png",
+          "/src/assets/elean563015 2.png",
         addInfo: "Бежевые классические брюки ",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -480,8 +480,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/elean563015 2.png",
-              "./assets/elean563015 2.png",
+              "/src/assets/elean563015 2.png",
+              "/src/assets/elean563015 2.png",
             ],
           },
         ],
@@ -495,7 +495,7 @@ export default createStore({
         category: 4,
         count: 9,
         mainImg:
-          "./assets/oblozhka 7.png",
+          "/src/assets/oblozhka 7.png",
         addInfo: "Бежевые классические брюки ",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -505,8 +505,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/oblozhka 7.png",
-              "./assets/oblozhka 7.png",
+              "/src/assets/oblozhka 7.png",
+              "/src/assets/oblozhka 7.png",
             ],
           },
         ],
@@ -520,7 +520,7 @@ export default createStore({
         category: 4,
         count: 9,
         mainImg:
-          "./assets/Elean251254 2.png",
+          "/src/assets/Elean251254 2.png",
         addInfo: "Бежевые классические брюки ",
         structure: "Нейлон 100%",
         warning: ["Только сухая чистка"],
@@ -530,8 +530,8 @@ export default createStore({
           {
             color: "#222220",
             images: [
-              "./assets/Elean251254 2.png",
-              "./assets/Elean251254 2.png",
+              "/src/assets/Elean251254 2.png",
+              "/src/assets/Elean251254 2.png",
             ],
           },
         ],
