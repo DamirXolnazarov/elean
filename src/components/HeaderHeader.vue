@@ -30,7 +30,9 @@
     </div>
     <div class="bottom">
       <p class="menu__p">НОВИНКИ</p>
-      <p class="menu__p">КАТЕГОРИИ</p>
+      <RouterLink to="/catalog">
+        <p class="menu__p">КАТЕГОРИИ</p>
+      </RouterLink>
       <p class="menu__p">НАШИ КОЛЛЕКЦИИ</p>
       <p class="menu__p">ПОКУПАТЕЛЯМ</p>
       <RouterLink to="/about"><p class="menu__p">О БРЕНДЕ</p></RouterLink>
