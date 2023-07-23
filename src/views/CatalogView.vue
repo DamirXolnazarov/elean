@@ -22,9 +22,7 @@
       <div v-for="i of this.data" :key="i.id" class="block">
         <div class="image">
           <img class="block__img" :src="i.mainImg" alt="" />
-          <!-- <img class="block__img" src="../assets/165 5.png" alt="" /> -->
         </div>
-        без картинкок потому что картинки с массива не загружаются 
         
         <div class="favourite">
           <p class="block__name">{{ i.title }}</p>
