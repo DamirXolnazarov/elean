@@ -46,7 +46,7 @@
       </div>
       <div class="button">
         <button class="btn">
-          ПОДПИСАТЬСЯ <img src="../assets/icon/Group 1496.png" alt="" />
+          ПОДПИСАТЬСЯ <img src="../assets/icon/Group.png" alt="icon" />
         </button>
       </div>
     </div>
