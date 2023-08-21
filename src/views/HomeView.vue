@@ -8,7 +8,7 @@ import ShourumSend from '../components/ShourumSend.vue'
       <div class="wrapper">
         <div class="top">
           <span>Новинки</span> 
-            <img src="../assets/11 внизу 1 (2).png" alt="" />
+            <img src="../assets/внизу.png" alt="" />
         </div>
         <div class="bott">
           <div class="bloc">
