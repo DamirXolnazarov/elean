@@ -36,10 +36,8 @@ const router = createRouter({
       component: () => import('../views/AboutBrend.vue')
     },
     {
-<<<<<<< HEAD
       path: '/product/:itemId',
       name: 'product',
-=======
       path:'/catalog',
       name:'catalog',
       component: () => import('../views/CatalogView.vue')
@@ -47,7 +45,6 @@ const router = createRouter({
     {
       path: '/item',
       name: 'item',
->>>>>>> f436ce5f7b348bebff5b2bd2f9fc2e962fd7ddcf
       component: () => import('../views/CardOfGoods.vue')
     },
     {
