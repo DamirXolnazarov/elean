@@ -60,15 +60,11 @@ export default {
 </script>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 .footer {
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
   width: 70%;
   display: flex;
   justify-content: space-between;

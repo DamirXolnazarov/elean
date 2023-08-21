@@ -1,39 +1,43 @@
 <script setup>
+import ShourumSend from '../components/ShourumSend.vue'
 </script>
 <template>
   <main>
     <section class="slider"></section>
     <section class="second">
       <div class="wrapper">
-        <div class="block">
-          <p>Новинки</p>
-          <img src="../assets/11 внизу 1 (2).png" alt="" />
+        <div class="top">
+          <span>Новинки</span> 
+            <img src="../assets/11 внизу 1 (2).png" alt="" />
         </div>
-        <div class="block">
-          <p>Смокинги</p>
-          <img src="../assets/Elean25sajt5 1 (2).png" alt="" />
+        <div class="bott">
+          <div class="bloc">
+            <span>Смокинги</span>
+            <img src="../assets/Elean25sajt5 1 (2).png" alt="" />
+          </div>
+          <div class="bloc">
+            <span>Брюки</span>
+            <img src="../assets/10сбоку2 1 (2).png" alt="" />
+          </div>
         </div>
-        <div class="block">
-          <p>Брюки</p>
-          <img src="../assets/10сбоку2 1 (2).png" alt="" />
-        </div>
+
       </div>
       <div class="wrapper2">
         <div class="block">
-          <p>Акции</p>
+          <span>Акции</span>
           <img src="../assets/Elean20 2 (2).png" alt="" />
         </div>
         <div class="block">
-          <p>Костюмы</p>
+          <span>Костюмы</span>
           <img src="../assets/Elean20 1 (2).png" alt="" />
         </div>
-        <div class="block">
-          <p>Платья</p>
+        <div class="block" style="margin-top: 50px;">
+          <span>Платья</span>
           <img src="../assets/10 сбоку 1 (1).png" alt="" />
         </div>
       </div>
     </section>
-    <section class="third">
+    <section class="third"> 
       <div class="bottom">
         <div class="block">
           <p>Блузы</p>
@@ -71,29 +75,13 @@
           вошли жентсвенные платья и костюмы.
         </p>
       </div>
-    </section>
+    </section>  
     <section class="five">
-      <h2>НАШ ШОУРУМ</h2>
+      <h2 >НАШ ШОУРУМ</h2>
       <img src="../assets/image_2023-07-14_12-36-45.png" alt="" />
     </section>
     <section class="send">
-      <div class="block">
-        <img class="png" src="../assets/Group 2156.png" alt="" />
-        <h2>ЗАПИСАТЬСЯ НА ПРИМЕРКУ В ШОУРУМЕ</h2>
-      </div>
-      <form>
-        <input type="text" name="" id="" placeholder="ВВЕДИТЕ ИМЯ" />
-        <input type="text" name="" id="" placeholder="ВВЕДИТЕ ТЕЛЕФОН" />
-        <input type="text" name="" id="" placeholder="ВВЕДИТЕ УДОБНОЕ ВРЕМЯ" />
-        <input
-          class="big"
-          type="text"
-          name=""
-          id=""
-          placeholder="ДОБАВИТЬ КОММЕНТАРИЙ"
-        />
-        <button>ОТПРАВИТЬ</button>
-      </form>
+     <ShourumSend/>
     </section>
     <section class="star">
       <h2>НАШИ ЗВЕЗДНЫЕ КЛИЕНТЫ И ОТЗЫВЫ</h2>
@@ -143,16 +131,22 @@
           <img class="starprofile" src="../assets/image 73.png" alt="" />
         </div>
       </div>
-    </section>
+    </section> 
   </main>
 </template>
 <style scoped>
+
 input {
   padding: 20px 60px;
 }
-
+.header[data-v-f71a5ffa]{
+  display: block;
+}
 .png {
   margin-left: 160px;
+}
+.five{
+  height: 600px !important;
 }
 .four,
 .five,
@@ -166,6 +160,38 @@ input {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+}
+.send{
+  padding: 0px 235px;
+  border: 1px solid gray;
+  margin-top:50px;
+}
+.stars .block{
+  position: relative;
+}
+.stars .block p{
+  position: absolute;
+  bottom: -50px;
+}
+.stars .block:nth-child(1) img{
+width: 256px;
+height: 370px;
+object-fit: cover;
+  }
+  .instagram .block:nth-child(1) img:nth-child(2){
+   width: 260px;
+   object-fit: cover;
+   height: 50px;
+  }
+  .star{
+    height: 500px;
+  }
+.instagram{
+  height: 650px;
+  padding-top: 50px;
+}
+.five , .four {
+  background: white;
 }
 .send {
   height: 400px;
@@ -204,6 +230,22 @@ input {
   width: 100%;
   object-fit: contain;
 }
+.bott{
+  width: 662px;
+  display: flex;
+  margin-top: 60px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.bott .bloc{
+  display: flex;
+  flex-direction: column;
+
+}
+.bott span{
+  margin-bottom: 20px;
+}
 .starprofile {
   margin-top: 0px;
 }
@@ -214,6 +256,7 @@ form {
   padding: 30px 200px;
   margin-top: 10px;
 }
+
 button {
   padding: 18px 40px;
 }
@@ -233,6 +276,13 @@ button {
 .third {
   width: 100%;
   padding: 90px;
+}
+.third .block{
+  display: flex;
+  flex-direction: column;
+}
+.third .block p{
+  margin-bottom: 20px;
 }
 .bottom {
   width: 100%;
@@ -257,37 +307,82 @@ button {
   width: 100%;
   padding: 90px;
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: space-between;
+  flex-direction: wrap;
 }
-.wrapper {
-  width: 49%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.wrapper .block {
-  width: 48%;
-}
-.wrapper .block img {
-  object-fit: contain;
-  width: 100%;
-}
-.wrapper .block p,
-.wrapper2 .block p,
-.third .bottom p {
-  font-family: Lato;
-  font-size: 18px;
+.block span {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.wrapper .block:nth-child(1) {
-  width: 100%;
+.wrapper {
+  width: 662px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  padding: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.wrapper .top img {
+  object-fit: cover;
+  width: 656px;
+}
+.wrapper .block p{
+  font-family: 'Lato';
+}
+.third{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -100px;
+}
+
+.top{
+  width: 660px;
+  height: 780px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.wrapper2 .block:nth-child(3){
+  width: 660px;
+  height: 810px;
+}
+.wrapper2 .block:nth-child(3) img{
+  width: 640px;
+  height: 820px;
+}
+.top span{
+  margin-bottom: 20px;
+}
+.wrapper .block:nth-child(2), .wrapper .block:nth-child(3){
+  width: 324px;
+  border: 2px solid;
+  height: 401px;
+}
+.wrapper .block:nth-child(1) img{
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
 }
 .wrapper2 {
   /* right: 0px !important; */
   width: 49%;
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.wrapper2 span{
+  margin-bottom: 20px;
+}
+.wrapper2 .block{
+   display: flex;
+   flex-direction: column;
+   
 }
 .wrapper2 .block {
   width: 48%;
@@ -299,10 +394,6 @@ button {
 
 .wrapper2 .block:nth-child(3) {
   width: 100%;
-}
-img {
-  margin: 4px;
-  margin-bottom: 100px;
 }
 p {
   margin-left: 10px;

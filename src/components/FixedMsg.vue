@@ -1,5 +1,6 @@
 <template>
     <div class="fixedMsg">
+        <span class="top">&lt--   /    вверх</span>
         <div class="phone">
             <div class="phonein1">
                 <div class="phonein2">
@@ -44,13 +45,23 @@ export default {
 <style scoped>
 .fixedMsg {
     width: 60px;
-    height: 130px;
+    height: 180px;
     display: flex;
     position: fixed;
     right: 20px;
     top: 70%;
     flex-direction: column;
     flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.top{
+    font-family: Lato;
+    color: rgba(182, 177, 177, 1);
+    width: 100px;
+    display: flex;
+    transform: rotate(90deg);
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }

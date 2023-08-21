@@ -3,7 +3,9 @@ import { RouterLink, RouterView } from "vue-router";
 import HeaderHeader from "./components/HeaderHeader.vue";
 import FooterFooter from "./components/FooterFooter.vue";
 import FixedMsg from "./components/FixedMsg.vue";
+import axios from 'axios'
 </script>
+
 
 <template>
   <HeaderHeader />
@@ -20,9 +22,18 @@ import FixedMsg from "./components/FixedMsg.vue";
   box-sizing: border-box;
   text-decoration: none;
 }
+#app{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
 @font-face {
   font-family: FuturaMediumC;
   src: url('./assets/fonts/futuramediumc.ttf');
+}
+@font-face {
+  font-family: Font1;
+  src: url('./assets/Playfair-Display-SemiBold.ttf.eot');
 }
 @font-face {
   font-family: Futura Md BT;
@@ -38,6 +49,6 @@ import FixedMsg from "./components/FixedMsg.vue";
 }
 @font-face {
   font-family: Lato;
-  src: url('./assets/fonts/Lato-Regular.ttf');
+  src: url('./assets/Lato-Regular.ttf');
 }
 </style>

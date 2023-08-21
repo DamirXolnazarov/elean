@@ -128,10 +128,13 @@ export default{
 main {
   width: 100%;
   display: flex;
+  font-family: Arial, Helvetica, sans-serif ;
   flex-direction: column;
   align-items: center;
   padding: 0px 230px;
-
+}
+.header[data-v-f71a5ffa]{
+  display: block;
 }
 .block{
   width: 320px;
@@ -359,6 +362,7 @@ img {
   width: 100%;
   background: rgba(37, 40, 49, 1);
   padding: 0px 230px;
+  font-family: Arial, Helvetica, sans-serif;
   height: 160vh;
 }
 </style>

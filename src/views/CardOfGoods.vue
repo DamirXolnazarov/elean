@@ -1,159 +1,20 @@
+<script setup>
+import store from "../store/index";
+import axios from 'axios'
+</script>
 <script>
 export default {
+  name: 'Card',
   data() {
     return {
-      objectForEMarket: [
-        {
-          idx: 0,
-          title: "МОНСЕ",
-          oldImg: '',
-          new: false,
-          isInCart: false,
-          isLoved: false,
-          category: 1,
-          count: 9,
-          ingridents: '98% шерсть, 2% эластан, отделка шелком',
-          mainImg:
-            "https://logos44.ru/wp-content/uploads/2023/03/istock_000046978234xlarge__large.jpg",
-          addInfo:
-            "Приталенный силуэт и заостренные лацканы подчеркивают линию талии, визуально корректируя фигуру до желанной всем 'песочные часы'. Классика женского смокинга, которую одобрил бы сам Ив Сен Лоран.",
-          structure: "Нейлон 100%",
-          warning: ["Только сухая чистка"],
-          price: 1059,
-          sizes: ["40", "42", "43"],
-          nosize: ["45", "47", "50"],
-          colors: [
-            {
-              color: ["#222220"],
-              images: [
-                "https://cdn-images.farfetch-contents.com/17/64/03/28/17640328_37120896_1000.jpg",
-                "https://cdn-images.farfetch-contents.com/17/64/03/28/17640328_37120896_1000.jpg",
-              ],
-            },
-          ],
-        },
-        {
-          idx: 1,
-          title: "AMI Paris",
-          oldImg: '',
-          new: true,
-          isInCart: false,
-          isLoved: false,
-          category: 2,
-          count: 5,
-          ingridents: 'Органический Хлопок 100%',
-          mainImg:
-            "https://cdn-images.farfetch-contents.com/20/25/11/95/20251195_50739924_1000.jpg",
-          addInfo:
-            "Черный, органический хлопок, вышитый логотип, круглый вырез, короткие рукава и прямой подол. Этот товар как минимум на 50% состоит из органических материалов. Узнать больше о том, какие товары получают отметку «Ответственный выбор», можно из материала «Как мы оцениваем экологичность и этичность».",
-          structure: "Нейлон 100%",
-          warning: ["Только сухая чистка"],
-          price: 165,
-          sizes: ["41", "44", "45"],
-          nosize: ["42", "43", "47"],
-          colors: [
-            {
-              color: ["#808080"],
-              images: [
-                "https://cdn-images.farfetch-contents.com/20/25/11/95/20251195_50739921_1000.jpg",
-                "https://cdn-images.farfetch-contents.com/20/25/11/95/20251195_50739919_1000.jpg",
-                "https://cdn-images.farfetch-contents.com/20/25/11/95/20251195_50739917_1000.jpg"
-              ],
-            },
-          ],
-        },
-        {
-          idx: 2,
-          title: "Palm Angels",
-          oldImg: '',
-          new: false,
-          isInCart: false,
-          isLoved: false,
-          category: 3,
-          count: 10,
-          ingridents: 'Наружный Материал: Полиэстер 100% Подкладка: Полиэстер 100%',
-          mainImg:
-            "https://cdn-images.farfetch-contents.com/20/13/42/89/20134289_50444399_1000.jpg",
-          addInfo:
-            "Черный/разноцветный, сплошной графичный принт, маленькая подвеска с логотипом, эластичный пояс, прямой крой, два вшитых кармана по бокам, прямой подол и длина по колено. Пожалуйста, примеряйте купальники и пляжные шорты только поверх собственного белья.",
-          structure: "Нейлон 100%",
-          warning: ["Только сухая чистка"],
-          price: 394,
-          sizes: ["43", "45", "46"],
-          nosize: ["40", "41", "47"],
-          colors: [
-            {
-              color: "",
-              images: [
-                "https://cdn-images.farfetch-contents.com/20/13/42/89/20134289_50444383_1000.jpg",
-                "https://cdn-images.farfetch-contents.com/20/13/42/89/20134289_50444338_1000.jpg",
-                "https://cdn-images.farfetch-contents.com/20/13/42/89/20134289_50444300_1000.jpg"
-              ],
-            },
-          ],
-        },
-        {
-          idx: 4,
-          title: "Adidas",
-          oldImg: '',
-          new: true,
-          isInCart: false,
-          isLoved: false,
-          category: 4,
-          count: 3,
-          ingridents: 'Подошва: Резина 100% Наружный Материал: Ткань 100% Подкладка: Ткань 100% ',
-          mainImg:
-            "https://cdn-images.farfetch-contents.com/16/81/33/04/16813304_33345131_1000.jpg",
-          addInfo:
-            "Декор с тремя полосками, закругленный носок, шнуровка спереди, контрастный задник, стелька с логотипом, кожаная подкладка и плоская резиновая подошва. Цвет: синий. Эта модель представлена на маркетплейсе, где можно найти самые редкие модели кроссовок, о которых мечтают коллекционеры и любители streetwear по всему миру.",
-          structure: "Нейлон 100%",
-          warning: ["Только сухая чистка"],
-          price: 177,
-          sizes: ["41", "44", "45"],
-          nosize: ["42", "43", "47"],
-          colors: [
-            {
-              color: ["#808080"],
-              images: [
-                "https://cdn-images.farfetch-contents.com/16/81/33/04/16813304_33345130_1000.jpg",
-                "https://cdn-images.farfetch-contents.com/16/81/33/04/16813304_33345133_1000.jpg",
-                "https://cdn-images.farfetch-contents.com/16/81/33/04/16813304_33345132_1000.jpg"
-              ],
-            },
-          ],
-        },
-        {
-          idx: 5,
-          title: "Balenciaga",
-          oldImg: '',
-          new: true,
-          isInCart: false,
-          isLoved: false,
-          category: 4,
-          count: 3,
-          ingridents: 'Полиэстер 100% Наружный Материал: Хлопок 97%',
-          mainImg:
-            "https://cdn-images.farfetch-contents.com/16/90/69/76/16906976_6efeadd2-9734-4e3a-aacd-88a53f0df9a4_1000.jpg",
-          addInfo:
-            "Вышитый логотип на груди, круглый вырез, приспущенные плечи и короткие рукава.",
-          structure: "Нейлон 100%",
-          warning: ["Ручная стирка"],
-          price: 410,
-          sizes: ["41", "44", "45"],
-          nosize: ["42", "43", "47"],
-          colors: [
-            {
-              color: ["yellow"],
-              images: [
-                "https://cdn-images.farfetch-contents.com/16/90/69/76/16906976_f09284f2-485e-43da-9a98-67cc80619a38_1000.jpg",
-                "https://cdn-images.farfetch-contents.com/16/90/69/76/16906976_dca20e0b-e866-4f5e-a99a-9790e6428a5f_1000.jpg",
-                "https://cdn-images.farfetch-contents.com/16/90/69/76/16906976_d3210330-0ac0-4e96-ae30-3d5b5d602440_1000.jpg"
-              ],
-            },
-          ],
-        },
-      ],
-      f: false
+      data: store.state.products,
+      obj: JSON.parse(window.localStorage.eventItem),
+      products: '',
+      fav: JSON.parse(window.localStorage.favorite),
+      moreIMg: [],
+      eventItem: '',
+      f: false,
+      // eventItem: this.products.filter(item => item.idx == this.$route.fullPath.split("/")[2])
     }
   },
   methods: {
@@ -167,47 +28,84 @@ export default {
       event.target.parentElement.style.border = '1px solid black'
       mainImg.children[0].src = event.target.src
       event.target.src = this.oldImg
+    },
+    addFav(item) {
+      store.dispatch("ADD_FAVOURITE", item)
+      item.isLoved = true
+      for(let i of this.fav){
+        if(item.idx == i.idx){
+          i.isLoved = true
+          console.log(i);
+        }
+      }
+    },
+    removeFav(item) {
+      store.dispatch("REMOVE_FAVOURITE", item)
+      item.isLoved = false
+    },
+    colorChange(color){
+      let col = document.querySelectorAll('.col')
+      for(let i of col){
+      }
+      for(let i of this.eventItem.colors){
+        if(color == i.color){
+          this.moreIMg = i.moreImg
+        }
+      }
+       
     }
-
-  }
+  },
+  mounted() {
+    axios.get('https://64abd9fb9edb4181202eabe7.mockapi.io/api/makhliyo/all').then(res => {
+      this.products = res.data[1].goods
+      this.eventItem = res.data[1].goods.filter(item => item.idx == this.$route.fullPath.split("/")[2])[0]
+      console.log(this.eventItem);
+    })
+  },
+  
+  
 }
 </script>
-<template >
-  <div class="item">
+<template>
+  <div class="item" >
     <div class="firstSight">
       <div class="images">
-        <div class="img" v-for="img of this.objectForEMarket[0].colors[0].images" :key="img.id">
+        <div class="img" v-for="img of this.moreIMg" :key="img.id">
           <img :src="img" @click="setImage()" alt="">
         </div>
       </div>
       <div class="mainImage">
-        <img :src="this.objectForEMarket[0].mainImg" alt="">
-        <span style="font-size: 21px; color: rgba(34, 34, 34, 1);">ВЫГЛЯДЕТЬ БЛИСТАТЕЛЬНО ПОМОЖЕТ</span>
+        <img :src="this.eventItem.mainImg" alt="">
       </div>
-      <div class="informs">
+      <div class="informs"> 
         <div class="basic" style="margin-bottom: 10px;">
           <div class="left">
-            <div class="title"><span>{{ this.objectForEMarket[0].title }}</span></div>
-            <div class="price" style="margin: 10px 0px;"><span>{{ this.objectForEMarket[0].price }} <span
+            <div class="title"><span>{{ this.eventItem.title }}</span></div>
+            <div class="price" style="margin: 10px 0px;"><span>{{ this.obj.price }} <span
                   style="color: rgba(202, 175, 151, 1);">₽</span></span></div>
           </div>
           <div class="right">
-            <svg width="21" style="cursor: pointer;" height="18" viewBox="0 0 21 18" fill="none"
+            <svg @click="addFav(this.eventItem)" v-if="this.eventItem.isLoved == false" style="cursor: pointer;" width="23" height="20" viewBox="0 0 23 20" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M10.5636 3.40126C9.9889 2.8743 7.78724 0.980795 5.83764 1.00015C3.83954 1.02024 0.755305 2.35329 1.01545 6.30329C1.24546 9.79257 10.4107 16.9676 10.4107 16.9676C10.468 17.0108 10.5276 17.0108 10.5893 16.9676C10.5893 16.9676 19.7545 9.79182 19.9846 6.30329C20.2447 2.35329 17.1605 1.02024 15.1616 1.00015C12.8975 0.977818 10.2931 3.53523 10.2931 3.53523L8.52505 5.37291"
-                stroke="#D7BCA3" stroke-width="2" stroke-miterlimit="3.8637" />
+                d="M11.5703 3.70142C10.9351 3.10858 8.50169 0.978395 6.34687 1.00017C4.13844 1.02277 0.729548 2.52245 1.01707 6.9662C1.2713 10.8916 11.4013 18.9636 11.4013 18.9636C11.4647 19.0121 11.5305 19.0121 11.5987 18.9636C11.5987 18.9636 21.7287 10.8908 21.9829 6.9662C22.2705 2.52245 18.8616 1.02277 16.6523 1.00017C14.1499 0.975046 11.2714 3.85214 11.2714 3.85214L9.31716 5.91953"
+                stroke="#222222" stroke-miterlimit="3.8637" />
+              </svg>
+              <svg @click="removeFav(this.eventItem)" v-if="this.eventItem.isLoved == true" style="cursor: pointer;" width="23" height="20" viewBox="0 0 23 20" fill="red"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+              d="M11.5703 3.70142C10.9351 3.10858 8.50169 0.978395 6.34687 1.00017C4.13844 1.02277 0.729548 2.52245 1.01707 6.9662C1.2713 10.8916 11.4013 18.9636 11.4013 18.9636C11.4647 19.0121 11.5305 19.0121 11.5987 18.9636C11.5987 18.9636 21.7287 10.8908 21.9829 6.9662C22.2705 2.52245 18.8616 1.02277 16.6523 1.00017C14.1499 0.975046 11.2714 3.85214 11.2714 3.85214L9.31716 5.91953"
+              stroke="#222222" stroke-miterlimit="3.8637" />
             </svg>
-
           </div>
         </div>
         <div class="size">
           <span style="font-size: 15px; display: block; margin-bottom: 15px;">РАЗМЕР</span>
           <div class="sizes" style="cursor: pointer;">
-            <div class="siz" v-for="size of this.objectForEMarket[0].sizes" :key="size.id">
+            <div class="siz" v-for="size of this.eventItem.sizes" :key="size.id">
               <span>{{ size }}</span>
             </div>
-            <div class="nosiz" v-for="nosize of this.objectForEMarket[0].nosize" :key="nosize.id">
+            <div class="nosiz" v-for="nosize of this.eventItem.nosize" :key="nosize.id">
               <span>{{ nosize }} <div class="no"><svg width="51" height="50" viewBox="0 0 51 50" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 49.5L50 0.5" stroke="#DADADA" />
@@ -237,8 +135,8 @@ export default {
         <div class="colors">
           <span>ЦВЕТ</span>
           <div class="coloris">
-            <div class="color" v-for="color of this.objectForEMarket[0].colors[0].color" :key="color.id">
-              <div class="col" v-if="color !== ''" :style="`border:7px solid ${color};`"></div>
+            <div class="color" @click="colorChange(color.color)"  v-for="color of this.eventItem.colors" :key="color.id">
+              <div class="col" v-if="color.color !== ''" :style="`border: 7px solid ${color.color};`"></div>
             </div>
           </div>
         </div>
@@ -253,9 +151,9 @@ export default {
             В РАССРОЧКУ</button></div>
         <div class="addedInfo">
           <span style="font-size: 15px; margin: 20px 0px; display: block; color: rgba(36, 36, 36, 1);">{{
-            this.objectForEMarket[0].addInfo }}</span>
+            this.eventItem.addInfo }}</span>
           <span style="font-size: 15px; color: rgba(36, 36, 36, 1);"><span style="font-weight: 600;">Состав:</span> {{
-            this.objectForEMarket[0].ingridents }}</span>
+            this.eventItem.structure }}</span>
         </div>
         <div class="actions"
           style="width: 100%; margin-top: 30px; display: flex; flex-direction: column; justify-content: flex-start;">
@@ -270,77 +168,13 @@ export default {
         </div>
       </div>
     </div>
-    <div class="line"></div>
-    <div class="otherItems">
-      <div class="Items">
-        <img :src="this.objectForEMarket[0].mainImg" alt="">
-        <div class="titleoth">
-          <span style="font-weight: 600;">/ {{ this.objectForEMarket[0].title }}</span>
-          <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M11.5703 3.70142C10.9351 3.10858 8.50169 0.978395 6.34687 1.00017C4.13844 1.02277 0.729548 2.52245 1.01707 6.9662C1.2713 10.8916 11.4013 18.9636 11.4013 18.9636C11.4647 19.0121 11.5305 19.0121 11.5987 18.9636C11.5987 18.9636 21.7287 10.8908 21.9829 6.9662C22.2705 2.52245 18.8616 1.02277 16.6523 1.00017C14.1499 0.975046 11.2714 3.85214 11.2714 3.85214L9.31716 5.91953"
-              stroke="#222222" stroke-miterlimit="3.8637" />
-          </svg>
-
-        </div>
-        <div class="priceoth">
-          <span>{{ this.objectForEMarket[0].price }} ₽</span>
-          <span>Подчеркнет линию талии</span>
-        </div>
-      </div>
-      <div class="Items">
-        <img :src="this.objectForEMarket[1].mainImg" alt="">
-        <div class="titleoth">
-          <span style="font-weight: 600;">/ {{ this.objectForEMarket[1].title }}</span>
-          <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M11.5703 3.70142C10.9351 3.10858 8.50169 0.978395 6.34687 1.00017C4.13844 1.02277 0.729548 2.52245 1.01707 6.9662C1.2713 10.8916 11.4013 18.9636 11.4013 18.9636C11.4647 19.0121 11.5305 19.0121 11.5987 18.9636C11.5987 18.9636 21.7287 10.8908 21.9829 6.9662C22.2705 2.52245 18.8616 1.02277 16.6523 1.00017C14.1499 0.975046 11.2714 3.85214 11.2714 3.85214L9.31716 5.91953"
-              stroke="#222222" stroke-miterlimit="3.8637" />
-          </svg>
-
-        </div>
-        <div class="priceoth">
-          <span>{{ this.objectForEMarket[1].price }} ₽</span>
-          <span>Подчеркнет линию талии</span>
-        </div>
-      </div>
-      <div class="Items">
-        <img :src="this.objectForEMarket[2].mainImg" alt="">
-        <div class="titleoth">
-          <span style="font-weight: 600;">/ {{ this.objectForEMarket[2].title }}</span>
-          <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M11.5703 3.70142C10.9351 3.10858 8.50169 0.978395 6.34687 1.00017C4.13844 1.02277 0.729548 2.52245 1.01707 6.9662C1.2713 10.8916 11.4013 18.9636 11.4013 18.9636C11.4647 19.0121 11.5305 19.0121 11.5987 18.9636C11.5987 18.9636 21.7287 10.8908 21.9829 6.9662C22.2705 2.52245 18.8616 1.02277 16.6523 1.00017C14.1499 0.975046 11.2714 3.85214 11.2714 3.85214L9.31716 5.91953"
-              stroke="#222222" stroke-miterlimit="3.8637" />
-          </svg>
-
-        </div>
-        <div class="priceoth">
-          <span>{{ this.objectForEMarket[2].price }} ₽</span>
-          <span>Подчеркнет линию талии</span>
-        </div>
-      </div>
-      <div class="Items">
-        <img :src="this.objectForEMarket[3].mainImg" alt="">
-        <div class="titleoth">
-          <span style="font-weight: 600;">/ {{ this.objectForEMarket[3].title }}</span>
-          <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M11.5703 3.70142C10.9351 3.10858 8.50169 0.978395 6.34687 1.00017C4.13844 1.02277 0.729548 2.52245 1.01707 6.9662C1.2713 10.8916 11.4013 18.9636 11.4013 18.9636C11.4647 19.0121 11.5305 19.0121 11.5987 18.9636C11.5987 18.9636 21.7287 10.8908 21.9829 6.9662C22.2705 2.52245 18.8616 1.02277 16.6523 1.00017C14.1499 0.975046 11.2714 3.85214 11.2714 3.85214L9.31716 5.91953"
-              stroke="#222222" stroke-miterlimit="3.8637" />
-          </svg>
-
-        </div>
-        <div class="priceoth">
-          <span>{{ this.objectForEMarket[3].price }} ₽</span>
-          <span>Подчеркнет линию талии</span>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
 <style scoped>
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
 .item {
   width: 100%;
   padding: 50px 200px 0px 150px;
@@ -361,14 +195,24 @@ export default {
   margin-top: 100px;
   display: flex;
   flex-direction: row;
-
+color: black;
   align-items: center;
   justify-content: space-between;
 
 }
+.otherItems a{
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+color: black;
+  align-items: center;
+  justify-content: space-between;
+}
 .titleoth{
   font-size: 21px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;

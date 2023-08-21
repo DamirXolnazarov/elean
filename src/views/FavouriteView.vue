@@ -1,5 +1,5 @@
 <template>
-  <div class="favourite">
+  <div class="favourite" >
     <p class="title">ИЗБРАННОЕ</p>
     <hr class="line" />
     <div class="goods">
@@ -18,7 +18,7 @@
             <p class="goods__item__main__name">
               {{ item.title }}
             </p>
-            <p class="goods__item__main__name">63 500 ₽</p>
+            <p class="goods__item__main__name">{{ item.price }} ₽</p>
           </div>
         </div>
         <textarea placeholder="ДОБАВИТЬ КОММЕНТАРИЙ" name="" id=""></textarea>
@@ -45,12 +45,21 @@
 </template>
 <script>
 import store from '../store';
+import axios from 'axios'
 export default {
   data() {
     return {
-      favourites: store.state.favouties
+      favourites: '',
+      fav: JSON.parse(window.localStorage.favorite),
     };
   },
+  methods:{
+
+  },
+  mounted() {
+  },
+  
+ 
 };
 
 </script>
